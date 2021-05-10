@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{A06436E9-465A-41BB-92DE-431A404C0461}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2B6C595C-6918-4E6E-A319-D7BDCBED13C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{511AEF3E-BBE4-45E3-9504-4E5CB8935CD5}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\common.props = ..\build\common.props
+	EndProjectSection
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Bannerlord.PHPExample", "Bannerlord.PHPExample\Bannerlord.PHPExample.msbuildproj", "{AAB37BF7-9E78-4C3A-840B-B6A764C614A5}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Bannerlord.PHP", "Bannerlord.PHP\Bannerlord.PHP.msbuildproj", "{7CD2F086-842A-431C-9CFF-628DBCDBB6A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAB37BF7-9E78-4C3A-840B-B6A764C614A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB37BF7-9E78-4C3A-840B-B6A764C614A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB37BF7-9E78-4C3A-840B-B6A764C614A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB37BF7-9E78-4C3A-840B-B6A764C614A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD2F086-842A-431C-9CFF-628DBCDBB6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD2F086-842A-431C-9CFF-628DBCDBB6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD2F086-842A-431C-9CFF-628DBCDBB6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD2F086-842A-431C-9CFF-628DBCDBB6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B6C595C-6918-4E6E-A319-D7BDCBED13C4} = {A06436E9-465A-41BB-92DE-431A404C0461}
+		{511AEF3E-BBE4-45E3-9504-4E5CB8935CD5} = {A06436E9-465A-41BB-92DE-431A404C0461}
+		{AAB37BF7-9E78-4C3A-840B-B6A764C614A5} = {2B6C595C-6918-4E6E-A319-D7BDCBED13C4}
+		{7CD2F086-842A-431C-9CFF-628DBCDBB6A5} = {2B6C595C-6918-4E6E-A319-D7BDCBED13C4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A13F87EA-6D2C-45A8-926C-C8EF09402394}
+	EndGlobalSection
+EndGlobal
