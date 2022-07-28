@@ -13,6 +13,9 @@ class SubModule extends \TaleWorlds\MountAndBlade\MBSubModuleBase {
   }
 
     function OnBeforeInitialModuleScreenSetAsRoot() {
+      $message = new \TaleWorlds\Library\InformationMessage('test');
+      \TaleWorlds\Library\InformationManager::DisplayMessage($message);
+    
       return parent::OnBeforeInitialModuleScreenSetAsRoot();
   }
 

@@ -1,84 +1,41 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Module>
-  <Name value="PHP Support" />
-  <Id value="$modulename$" />
+<Module xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/SubModule.xsd" >
+  <Id value="$moduleid$" />
+  <Name value="$modulename$" />
   <Version value="v$version$" />
   <Official value="false" />
   <DefaultModule value="false" />
   <SingleplayerModule value="true" />
   <MultiplayerModule value="false" />
-  <DependedModules />
-  <!-- Prototype -->
+  <ModuleCategory value="Singleplayer" />
+  <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/4254" />
+  <DependedModules>
+    <!-- BUTRLoader or any launcher that provides this feature will ignore this Dependency-marker -->
+    <!-- but the default launcher will not let this module to be loaded -->
+    <DependedModule Id="BUTRLoader.BUTRAssemblyResolver" Optional="false" />
+
+    <DependedModule Id="Native" Optional="true" DependentVersion="e$gameversion$.*" />
+    <DependedModule Id="SandBoxCore" Optional="true" DependentVersion="e$gameversion$.*" />
+    <DependedModule Id="Sandbox" Optional="true" DependentVersion="e$gameversion$.*" />
+    <DependedModule Id="StoryMode" Optional="true" DependentVersion="e$gameversion$.*" />
+    <DependedModule Id="CustomBattle" Optional="true" DependentVersion="e$gameversion$.*" />
+  </DependedModules>
+  <!-- Community Dependency Metadata -->
+  <!-- https://github.com/BUTR/Bannerlord.BUTRLoader#for-modders -->
   <DependedModuleMetadatas>
-    <DependedModuleMetadata id="Native" order="LoadAfterThis" optional="true" />
-    <DependedModuleMetadata id="SandBoxCore" order="LoadAfterThis" optional="true" />
-    <DependedModuleMetadata id="Sandbox" order="LoadAfterThis" optional="true" />
-    <DependedModuleMetadata id="StoryMode" order="LoadAfterThis" optional="true" />
-    <DependedModuleMetadata id="CustomBattle" order="LoadAfterThis" optional="true" />
+    <DependedModuleMetadata id="Native" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
+    <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
+    <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
+    <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
+    <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
   </DependedModuleMetadatas>
-  <!-- Prototype -->
+  <!-- Community Dependency Metadata -->
   <SubModules>
     <SubModule>
-      <Name value="$modulename$" />
-      <DLLName value="$modulename$.dll" />
-      <SubModuleClassType value="$modulename$.SubModule" />
-      <!--
-      <Assemblies>
-        <Assembly value="BCrypt.Net-Next.dll"/>
-        <Assembly value="Devsense.PHP.Parser.dll"/>
-        <Assembly value="Devsense.PHP.Phar.dll"/>
-        <Assembly value="FluentFTP.dll"/>
-        <Assembly value="HtmlAgilityPack.dll"/>
-        <Assembly value="Isopoh.Cryptography.Argon2.dll"/>
-        <Assembly value="Isopoh.Cryptography.Blake2b.dll"/>
-        <Assembly value="Isopoh.Cryptography.SecureArray.dll"/>
-        <Assembly value="Microsoft.ApplicationInsights.dll"/>
-        <Assembly value="Microsoft.Bcl.AsyncInterfaces.dll"/>
-        <Assembly value="Microsoft.Extensions.ObjectPool.dll"/>
-        <Assembly value="Mono.Posix.dll"/>
-        <Assembly value="Mono.Posix.NETStandard.dll"/>
-        <Assembly value="mvp.xml.dll"/>
-        <Assembly value="MySqlConnector.dll"/>
-        <Assembly value="NGettext.dll"/>
-        <Assembly value="Peachpie.CodeAnalysis.dll"/>
-        <Assembly value="Peachpie.Compiler.Diagnostics.dll"/>
-        <Assembly value="Peachpie.Library.dll"/>
-        <Assembly value="Peachpie.Library.Graphics.dll"/>
-        <Assembly value="Peachpie.Library.MsSql.dll"/>
-        <Assembly value="Peachpie.Library.MySql.dll"/>
-        <Assembly value="Peachpie.Library.Network.dll"/>
-        <Assembly value="Peachpie.Library.PDO.dll"/>
-        <Assembly value="Peachpie.Library.RegularExpressions.dll"/>
-        <Assembly value="Peachpie.Library.Scripting.dll"/>
-        <Assembly value="Peachpie.Library.XmlDom.dll"/>
-        <Assembly value="Peachpie.Microsoft.CodeAnalysis.dll"/>
-        <Assembly value="Peachpie.Runtime.dll"/>
-        <Assembly value="Rationals.dll"/>
-        <Assembly value="SixLabors.Fonts.dll"/>
-        <Assembly value="SixLabors.ImageSharp.dll"/>
-        <Assembly value="SixLabors.ImageSharp.Drawing.dll"/>
-        <Assembly value="System.Buffers.dll"/>
-        <Assembly value="System.CodeDom.dll"/>
-        <Assembly value="System.Collections.Immutable.dll"/>
-        <Assembly value="System.Data.SqlClient.dll"/>
-        <Assembly value="System.Diagnostics.DiagnosticSource.dll"/>
-        <Assembly value="System.IO.FileSystem.AccessControl.dll"/>
-        <Assembly value="System.Memory.dll"/>
-        <Assembly value="System.Numerics.Vectors.dll"/>
-        <Assembly value="System.Reflection.Metadata.dll"/>
-        <Assembly value="System.Runtime.CompilerServices.Unsafe.dll"/>
-        <Assembly value="System.Security.AccessControl.dll"/>
-        <Assembly value="System.Security.Cryptography.Xml.dll"/>
-        <Assembly value="System.Security.Permissions.dll"/>
-        <Assembly value="System.Security.Principal.Windows.dll"/>
-        <Assembly value="System.Text.Encoding.CodePages.dll"/>
-        <Assembly value="System.Text.Encodings.Web.dll"/>
-        <Assembly value="System.Text.Json.dll"/>
-        <Assembly value="System.Threading.Tasks.Extensions.dll"/>
-        <Assembly value="System.ValueTuple.dll"/>
-        <Assembly value="System.Xml.XPath.XmlDocument.dll"/>
-      </Assemblies>
-      -->
+      <Name value="$moduleid$" />
+      <DLLName value="$moduleid$.dll" />
+      <SubModuleClassType value="$moduleid$.SubModule" />
       <Tags/>
     </SubModule>
   </SubModules>
