@@ -26,7 +26,9 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Build Bannerlord.PHP
-        run: dotnet pack src/Bannerlord.PHP/Bannerlord.PHP.msbuildproj --configuration Release -p:GameFolder="$PWD/bannerlord";
+        run: >-
+          mkdir $PWD/bannerlord;
+          dotnet pack src/Bannerlord.PHP/Bannerlord.PHP.msbuildproj --configuration Release -p:GameFolder="$PWD/bannerlord";
         shell: pwsh
 
       - name: Upload Bannerlord folder
