@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-workflow.json
-name: Publish
+name: Publish Module
 
 on:
   push:
@@ -16,7 +16,7 @@ env:
 
 jobs:
   build-module:
-    name: Build for distribution
+    name: Build Module
     runs-on: ubuntu-latest
     steps:
     - name: Setup
@@ -30,9 +30,10 @@ jobs:
         dotnet pack src/Bannerlord.PHP/Bannerlord.PHP.msbuildproj --configuration Release -p:GameFolder="$PWD/bannerlord";
       shell: pwsh
 
-    - name: Run ChangelogParser
+    - name: Install and Run ChangelogParser
       id: changelog
       run: |
+        dotnet tool install -g Bannerlord.ChangelogParser
         vers="$(bannerlord_changelog_parser latestversion -f "$PWD/changelog.txt")"
         echo "::set-output name=mod_version::$vers"
         desc="$(bannerlord_changelog_parser fulldescription -f "$PWD/changelog.txt")"
