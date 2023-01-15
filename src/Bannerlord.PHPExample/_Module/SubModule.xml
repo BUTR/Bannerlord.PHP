@@ -4,31 +4,29 @@
   <Id value="$moduleid$" />
   <Name value="$modulename$" />
   <Version value="v$version$" />
-  <Official value="false" />
   <DefaultModule value="false" />
-  <SingleplayerModule value="true" />
-  <MultiplayerModule value="false" />
+  <ModuleType value="Community" />
   <ModuleCategory value="Singleplayer" />
   <Url value="" />
   <DependedModules>
     <DependedModule Id="Bannerlord.PHP" DependentVersion="v$phpversion$" />
 
-    <DependedModule Id="Native" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="SandBoxCore" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="Sandbox" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="StoryMode" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="CustomBattle" DependentVersion="e$gameversion$.*" />
+    <DependedModule Id="Native" DependentVersion="v$gameversion$.*" />
+    <DependedModule Id="SandBoxCore" DependentVersion="v$gameversion$.*" />
+    <DependedModule Id="Sandbox" DependentVersion="v$gameversion$.*" />
+    <DependedModule Id="StoryMode" DependentVersion="v$gameversion$.*" />
+    <DependedModule Id="CustomBattle" DependentVersion="v$gameversion$.*" />
   </DependedModules>
   <!-- Community Dependency Metadata -->
   <!-- https://github.com/BUTR/Bannerlord.BUTRLoader#for-modders -->
   <DependedModuleMetadatas>
     <DependedModuleMetadata id="Bannerlord.PHP" order="LoadBeforeThis" version="v$phpversion$" />
 
-    <DependedModuleMetadata id="Native" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
+    <DependedModuleMetadata id="Native" order="LoadBeforeThis" optional="true" version="v$gameversion$.*" />
+    <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" optional="true" version="v$gameversion$.*" />
+    <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" optional="true" version="v$gameversion$.*" />
+    <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" optional="true" version="v$gameversion$.*" />
+    <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" optional="true" version="v$gameversion$.*" />
   </DependedModuleMetadatas>
   <!-- Community Dependency Metadata -->
   <SubModules>

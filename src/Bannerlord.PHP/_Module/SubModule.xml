@@ -4,16 +4,14 @@
   <Id value="$moduleid$" />
   <Name value="$modulename$" />
   <Version value="v$version$" />
-  <Official value="false" />
   <DefaultModule value="false" />
-  <SingleplayerModule value="true" />
-  <MultiplayerModule value="false" />
+  <ModuleType value="Community" />
   <ModuleCategory value="Singleplayer" />
   <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/4254" />
   <DependedModules>
     <!-- BUTRLoader or any launcher that provides this feature will ignore this Dependency-marker -->
     <!-- but the default launcher will not let this module to be loaded -->
-    <DependedModule Id="BUTRLoader.BUTRAssemblyResolver" Optional="false" />
+    <DependedModule Id="BLSE.AssemblyResolver" Optional="false" />
   </DependedModules>
   <SubModules>
     <SubModule>

@@ -1,7 +1,7 @@
-<Project Sdk="Peachpie.NET.Sdk/1.0.23">
+<Project Sdk="Peachpie.NET.Sdk/1.0.25">
   
   <PropertyGroup>
-    <PeachPieVersion>1.0.23</PeachPieVersion>
+    <PeachPieVersion>1.0.25</PeachPieVersion>
     <Version>$(PeachPieVersion).0</Version>
     <OutputType>library</OutputType>
     <TargetFramework>net472</TargetFramework>
@@ -9,7 +9,7 @@
     <ModuleId>$(MSBuildProjectName)</ModuleId>
     <ModuleName>PHP Support</ModuleName>
     <GameFolder>$(BANNERLORD_GAME_DIR)</GameFolder>
-    <GameVersion>1.7.2</GameVersion>
+    <GameVersion>1.0.0</GameVersion>
   </PropertyGroup>
   
   <ItemGroup>
@@ -17,8 +17,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Bannerlord.BuildResources" Version="1.0.1.68" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
-    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core.EarlyAccess" Version="$(GameVersion).*" />
+    <PackageReference Include="Bannerlord.BuildResources" Version="1.0.1.87" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*" />
   </ItemGroup>
   
 </Project>
