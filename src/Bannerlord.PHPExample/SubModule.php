@@ -2,19 +2,23 @@
 
 namespace Bannerlord\PHPExample;
 
-class SubModule extends \TaleWorlds\MountAndBlade\MBSubModuleBase {
+use TaleWorlds\MountAndBlade\MBSubModuleBase;
+use TaleWorlds\Library\InformationMessage;
+use TaleWorlds\Library\InformationManager;
 
-  function OnSubModuleLoad() {
+class SubModule extends MBSubModuleBase {
+
+  public function OnSubModuleLoad() {
       return parent::OnSubModuleLoad();
   }
 
-    function OnSubModuleUnloaded() {
+  public function OnSubModuleUnloaded() {
       return parent::OnSubModuleUnloaded();
   }
 
-    function OnBeforeInitialModuleScreenSetAsRoot() {
-      $message = new \TaleWorlds\Library\InformationMessage('test');
-      \TaleWorlds\Library\InformationManager::DisplayMessage($message);
+  public function OnBeforeInitialModuleScreenSetAsRoot() {
+      $message = new InformationMessage('test');
+      InformationManager::DisplayMessage($message);
     
       return parent::OnBeforeInitialModuleScreenSetAsRoot();
   }
