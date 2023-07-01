@@ -4,33 +4,15 @@
   <Id value="$moduleid$" />
   <Name value="$modulename$" />
   <Version value="v$version$" />
-  <Official value="false" />
   <DefaultModule value="false" />
-  <SingleplayerModule value="true" />
-  <MultiplayerModule value="false" />
+  <ModuleType value="Community" />
   <ModuleCategory value="Singleplayer" />
   <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/4254" />
   <DependedModules>
     <!-- BUTRLoader or any launcher that provides this feature will ignore this Dependency-marker -->
     <!-- but the default launcher will not let this module to be loaded -->
-    <DependedModule Id="BUTRLoader.BUTRAssemblyResolver" Optional="false" />
-
-    <DependedModule Id="Native" Optional="true" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="SandBoxCore" Optional="true" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="Sandbox" Optional="true" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="StoryMode" Optional="true" DependentVersion="e$gameversion$.*" />
-    <DependedModule Id="CustomBattle" Optional="true" DependentVersion="e$gameversion$.*" />
+    <DependedModule Id="BLSE.AssemblyResolver" Optional="false" />
   </DependedModules>
-  <!-- Community Dependency Metadata -->
-  <!-- https://github.com/BUTR/Bannerlord.BUTRLoader#for-modders -->
-  <DependedModuleMetadatas>
-    <DependedModuleMetadata id="Native" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-    <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" optional="true" version="e$gameversion$.*" />
-  </DependedModuleMetadatas>
-  <!-- Community Dependency Metadata -->
   <SubModules>
     <SubModule>
       <Name value="$moduleid$" />

@@ -2,4 +2,6 @@
 
 namespace Bannerlord\PHP;
 
-class SubModule extends \TaleWorlds\MountAndBlade\MBSubModuleBase { }
+use TaleWorlds\MountAndBlade\MBSubModuleBase;
+
+class SubModule extends MBSubModuleBase { }

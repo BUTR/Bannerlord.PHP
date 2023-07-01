@@ -5,7 +5,7 @@
   </a>
   </br>
   <a href="https://github.com/BUTR/Bannerlord.PHP" alt="Lines Of Code">
-    <img src="https://tokei.rs/b1/github/BUTR/Bannerlord.PHP?category=code" />
+    <img src="https://aschey.tech/tokei/github/BUTR/Bannerlord.PHP?category=code" />
   </a>
   <a href="https://www.codefactor.io/repository/github/butr/bannerlord.php">
     <img src="https://www.codefactor.io/repository/github/butr/bannerlord.php/badge" alt="CodeFactor" />
