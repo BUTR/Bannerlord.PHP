@@ -34,12 +34,28 @@
     <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fnexusmods-downloads-ayuqql60xfxb.runkit.sh%2F%3Ftype%3Dviews%26gameId%3D3174%26modId%3D4254" />
   </a>
   </br>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2859285602">
+    <img alt="Steam Mod Configuration Menu" src="https://img.shields.io/badge/Steam-PHP%20Support-blue.svg" />
+  </a>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2859285602">
+    <img alt="Steam Downloads" src="https://img.shields.io/steam/downloads/2859285602?label=Downloads&color=blue">
+  </a>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2859285602">
+    <img alt="Steam Views" src="https://img.shields.io/steam/views/2859285602?label=Views&color=blue">
+  </a>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2859285602">
+    <img alt="Steam Subscriptions" src="https://img.shields.io/steam/subscriptions/2859285602?label=Subscriptions&color=blue">
+  </a>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2859285602">
+    <img alt="Steam Favorites" src="https://img.shields.io/steam/favorites/2859285602?label=Favorites&color=blue">
+  </a>
+  </br>
 </p>
 
 This is an experimental module for installing modules written in PHP that uses [PeachPie](https://peachpie.io/).  
-Requires [BUTRLoader](https://www.nexusmods.com/mountandblade2bannerlord/mods/2513) v1.8.3 to be installed and the game to be run via [BUTRLoader](https://www.nexusmods.com/mountandblade2bannerlord/mods/2513). We will try to create a workaround for running the game via Vortex in the future.
+Requires [BLSE](https://www.nexusmods.com/mountandblade2bannerlord/mods/1) to be installed and the game to be run via [BLSE](https://www.nexusmods.com/mountandblade2bannerlord/mods/1). We will try to create a workaround for running the game via Vortex in the future.
 ## For Players
-Make sure that [BUTRLoader](https://www.nexusmods.com/mountandblade2bannerlord/mods/2513) is installed and the game is run via [BUTRLoader](https://www.nexusmods.com/mountandblade2bannerlord/mods/2513).
+Make sure that [BLSE](https://www.nexusmods.com/mountandblade2bannerlord/mods/1) is installed and the game is run via [BLSE](https://www.nexusmods.com/mountandblade2bannerlord/mods/1).
 ## For Modders
 Use [this](https://github.com/BUTR/Bannerlord.PHP/tree/master/src/Bannerlord.PHPExample) as an example of how to create a PHP module. We'll create a dotnet template once we are sure the template is correct.  
 We don't have anyone who knows PHP enough to provide support. Please check [PeackPie documentation](https://docs.peachpie.io/) on how to interact with C#, the documentation contains enough examples.  
